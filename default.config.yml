@@ -2,47 +2,23 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: yes
-configure_sudoers: yes
-configure_terminal: yes
 configure_osx: yes
+install_ohmyzsh: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/tobiaskloss/dotfiles
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Documents/dotfiles/ 
 dotfiles_files:
-  - .bash_profile
-  - .gitignore
-  - .inputrc
   - .osx
-  - .vimrc
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
   - git
-  - go
-  - gpg
-  - hub
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
+  - git-flow
   - nmap
-  - node
-  - nvm
-  - php
-  - ssh-copy-id
-  - cowsay
-  - readline
   - openssl
-  - pv
   - wget
-  - wrk
+  - maven
+  - zsh
 
 homebrew_taps:
   - homebrew/core
@@ -50,25 +26,35 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
   - docker
-  - dropbox
-  - firefox
+  - iterm2
+  - bettertouchtool
   - google-chrome
-  - handbrake
-  - licecap
-  - macvim
-  - sequel-pro
-  - skitch
+    #  - skitch
   - slack
-  - sublime-text
-  - transmit
-  - vagrant
+  - macvim
+  - macpass
+  - shadow-beta
+  - discord
+  - dash
+  - jetbrains-toolbox
+  - ssh-tunnel-manager
+    #  - appcleaner
+    #  - obs
+    #  - postman
+    #  - daisydisk
+    #  - drawio
+    #  - handbrake
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
-mas_email: ""
-mas_password: ""
+mas_installed_apps: [
+  - { id: 1319778037, name: "iStat Menus"}
+  - { id: 824171161, name: "Affinity Designer"}
+  - { id: 1147396723, name: "WhatsApp"}
+  - { id: 937984704, name: "Amphetamine"}
+  - { id: 405843582, name: "Alfred"}
+  - { id: 732710998, name: "Enpass"}
+]
 
 osx_script: "~/.osx --no-restart"
 

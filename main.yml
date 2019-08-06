@@ -20,15 +20,12 @@
     - role: geerlingguy.mas
       when: mas_installed_apps
       tags: ['mas']
+    - role: gantsign.oh-my-zsh
+      when: install_ohmyzsh
+      taks: ['ohmyzsh']
 
   tasks:
     - include_tasks: tasks/ansible-setup.yml
-
-    - include_tasks: tasks/sudoers.yml
-      when: configure_sudoers
-
-    - include_tasks: tasks/terminal.yml
-      when: configure_terminal
 
     - include_tasks: tasks/osx.yml
       when: configure_osx
