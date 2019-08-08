@@ -1,0 +1,44 @@
+############################
+## Homebrew Configuration ##
+############################
+
+# REQUIRED, do not change
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+
+homebrew_installed_packages:
+  - wget
+  - zsh
+  - assh
+  - git
+  - git-flow
+  - openssl
+  - maven
+  # Optional (Uncomment as needed)
+  #  - nmap
+
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - docker
+  - iterm2
+  - bettertouchtool
+  - google-chrome
+  - slack
+  - macvim
+  - macpass
+  - dash
+  - jetbrains-toolbox
+  - ssh-tunnel-manager
+  # Optional (Uncomment as needed)
+  #  - shadow-beta
+  #  - discord
+  #  - skitch
+  #  - appcleaner
+  #  - obs
+  #  - postman
+  #  - daisydisk
+  #  - drawio
+  #  - handbrake
