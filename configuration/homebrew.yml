@@ -32,6 +32,7 @@ homebrew_cask_apps:
   - dash
   - jetbrains-toolbox
   - ssh-tunnel-manager
+  - hazeover 
   # Optional (Uncomment as needed)
   #  - shadow-beta
   #  - discord
